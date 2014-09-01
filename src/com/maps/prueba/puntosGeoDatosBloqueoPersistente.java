@@ -1,24 +1,24 @@
 package com.maps.prueba;
 
-public class puntoGeo {
+public class puntosGeoDatosBloqueoPersistente {
 	private double latitude;
 	private double longitude;
-	private String tipo;
+	//private String tipo;
     private String usuario;
 
-    public puntoGeo()  {
+    public puntosGeoDatosBloqueoPersistente()  {
     }
 
-    public puntoGeo(String tipo, String usuario,double latitude, double longitude) {
-        this.tipo = tipo;
+    public puntosGeoDatosBloqueoPersistente(String usuario,double latitude, double longitude) {
+      //  this.tipo = tipo;
         this.usuario = usuario;
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
+//    public String getTipo() {
+//        return tipo;
+//    }
 
     public String getUsuario() {
         return usuario;
@@ -34,6 +34,6 @@ public class puntoGeo {
     
     @Override
     public String toString() {
-        return "puntoGeo [tipo=" + tipo + ", usuario=" + usuario + ", latitude=" +latitude+ ", longitude="+longitude+"]";
+        return "puntoGeo [usuario=" + usuario + ", latitude=" +latitude+ ", longitude="+longitude+"]";
     }
 }
