@@ -29,20 +29,14 @@ public class puntos {
     
     static 
     {
-        puntosGeoDatosUsuario[] puntos = new puntosGeoDatosUsuario[]{
-            new puntosGeoDatosUsuario("noooo", "garcia",-17.435477,-66.161418), 
-            new puntosGeoDatosUsuario("uni", "garcia",-17.393894,-66.149369)
-        };
+        puntosGeoDatosUsuario[] puntos = new puntosGeoDatosUsuario[]{ };
         for (puntosGeoDatosUsuario punto : puntos) {
             mapPuntosGeoDatosUsuario.put(punto.getTipo()+punto.getUsuario(), punto);
         }
     }
     static 
     {
-    	puntosGeoDatosBloqueoPersistente[] puntosPersistentes = new puntosGeoDatosBloqueoPersistente[]{
-            new puntosGeoDatosBloqueoPersistente("garcia",-17.435477,-66.161418), 
-            new puntosGeoDatosBloqueoPersistente("garcia",-17.393894,-66.149369)
-        };
+    	puntosGeoDatosBloqueoPersistente[] puntosPersistentes = new puntosGeoDatosBloqueoPersistente[]{ };
         for (puntosGeoDatosBloqueoPersistente punto : puntosPersistentes) {
         	String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
             mapPuntosGeoDatosPersistentes.put(timeStamp, punto);
