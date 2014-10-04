@@ -1,16 +1,16 @@
 package com.maps.prueba;
 
-public class puntosGeoDatosBloqueoPersistente {
+public class puntosGeoDatosBloqueoAlerta {
 	private double latitude;
 	private double longitude;
 	private String tipo;
     private String usuario;
 
-    public puntosGeoDatosBloqueoPersistente()  {
+    public puntosGeoDatosBloqueoAlerta()  {
     }
 
-    public puntosGeoDatosBloqueoPersistente(String tipo,String usuario,double latitude, double longitude) {
-    	this.tipo = tipo;
+    public puntosGeoDatosBloqueoAlerta(String tipo, String usuario,double latitude, double longitude) {
+        this.tipo = tipo;
         this.usuario = usuario;
         this.latitude = latitude;
         this.longitude = longitude;
